@@ -1,0 +1,12 @@
+root = true
+
+[*]
+charset = utf-8
+#使用lf方式换行
+end_of_line = lf
+#每个文件结束添加一个空行
+insert_final_newline = true
+#使用空格代替tab
+indent_style = space
+#缩进使用两个空格
+indent_size = 2
