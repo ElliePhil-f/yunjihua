@@ -1,0 +1,344 @@
+/* 移入bootstrap的less文件 */
+@import url('../lib/bootstrap/less/bootstrap.less');
+/* 重置bootstrap的默认设置 */
+@icon-font-path:        "../lib/bootstrap/fonts/";
+
+
+body,ul,ol,li,h1,h2,h3,h4,h5,h6,div{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+body{
+  min-width: 675px;
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:none;
+}
+ul,ol{
+  list-style:none;
+}
+img{
+  border:0;
+}
+a,
+input,
+button{
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input,
+textarea{
+  outline: none;
+}
+input,
+button{
+  -webkit-appearance:none;
+}
+
+
+
+.w{
+  width: 100%;
+}
+.ww{
+  width: 1200px;
+}
+.cen{
+  margin: 0 auto;
+}
+.hnk{
+  display: inline-block;
+}
+.pr{
+  position: relative;
+}
+.pa{
+  position: absolute;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.tx{
+  text-align: center;
+}
+.clearfix:after {
+content: "";
+display: block;
+height: 0;
+line-height: 0;
+visibility: hidden;
+clear: both;
+}
+
+
+
+
+.box{
+  // 头部
+  .header{
+    .cover{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  // 内容
+  .content{
+    // 模块1
+    .module1{
+      span{
+        font-size: 50px;
+        font-weight: bold;
+        padding-top: 55px;
+        color: #323232;
+      }
+      i{
+        vertical-align:-30px;
+      }
+      h2{
+        font-size: 20px;
+        color: #999;
+        padding-top: 15px;
+        padding-bottom: 45px;
+        font-weight:500;
+      }
+      ul{
+        li{
+          float: left;
+          width: 25%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    // 模块2
+    .module2{
+      .text2{
+        h1{
+          font-size: 38px;
+          color: #424242;
+          padding-top: 70px;
+        }
+        h2{
+          font-size: 20px;
+          color: #999;
+          padding-top: 15px;
+          padding-bottom: 45px;
+        }
+      }
+      .img2{
+        .item{
+          .img{
+            width: 95%;
+          }
+          .pa{
+            top:380px;
+            left: 140px;
+            z-index: 999;
+            span{
+              font-size: 16px;
+              color: #fff;
+              font-weight: 600;
+            }
+            p{
+              font-size: 40px;
+              color: #fff;
+              padding-top: 7px;
+              font-weight: bold;
+            }
+            .dc{
+              width: 96px;
+              height: 44px;
+              background: #000;
+              background: url("../images/web/battery (1).png") no-repeat;
+              h1{
+                margin-top: 15px;
+                margin-right: 5px;
+                font-size: 15px;
+                font-weight: 500;
+                color: #fff;
+                float: right;
+              }
+            }
+          }
+          .xz{
+            top:40px;
+            left:300px;
+            img{
+              width:400px;
+            }
+            h1{
+              font-size: 43px;
+              font-weight: bold;
+              color: red;
+              margin-top: 100px;
+              margin-left: 20px;
+            }
+            p{
+              color: red;
+              font-size: 14px!important;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    // 模块3
+    .module3{
+      h1{
+        font-size: 38px;
+        color: #424242;
+        padding-top: 70px;
+      }
+      h2{
+        font-size: 20px;
+        color: #999;
+        padding-top: 15px;
+        padding-bottom: 45px;
+      }
+      .img3{
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        img{
+          width: 100%;
+          border-bottom: 3px solid #eee;
+        }
+        h3{
+          font-size: 18px;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          color: #ee3c0c;
+        }
+        p{
+          // width: 300px;
+          font-size: 14px;
+          color: #999;
+          
+          text-align: center;
+          line-height: 24px;
+        }
+      }
+    }
+    // 模块4
+    .module4{
+      .text4{
+        h1{
+          font-size: 38px;
+          color: #424242;
+          padding-top: 70px;
+          span{
+            color: #00b38b;
+          }
+        }
+        p{
+          font-size: 20px;
+          color: #999;
+          padding-top: 15px;
+          padding-bottom: 45px;
+        }
+      }
+      .lei{
+        .dl{
+          margin-bottom: 50px;
+          width: 358px;
+          height: 310px;
+          background: url("../images/web/border.png")no-repeat;
+          h1{
+            padding-top: 184px;
+            font-size : 20px;
+            padding-bottom: 17px;
+            color:#fff;
+          }
+          h2{
+            font-size:22px;
+            font-weight:bold;
+            color: #fff;
+          }
+        }
+        .xl{
+          padding-bottom: 50px;
+          text-align: left;
+          color: #666;
+          h3{
+            font-size:30px;
+            line-height: 50px;
+            span{
+              color:#F95D37;
+            }
+          }
+        }
+        a{
+          width: 190px;
+          height: 50px;
+          border-radius: 25px;
+          border: 1px solid #00b38b;
+          color: #00b38b;
+          transition: all 0.5s;
+          text-align: center;
+          line-height: 35px;
+          font-size: 18px;
+          margin: 0 auto;
+          &:hover{
+            background: #00b38b;
+            color: #fff;
+          }
+        }
+      }
+    }
+    // 模块5
+    .module5{
+      text-align: center;
+      .text5{
+        h1{
+          font-size: 38px;
+          color: #424242;
+          padding-top: 70px;
+        }
+        h2{
+          font-size: 20px;
+          color: #999;
+          padding-top: 15px;
+          padding-bottom: 45px;
+        }
+      }
+      .img5{
+        width: 25%;
+        padding: 10px;
+        text-align: center;
+        float: left;
+        margin: 20px 0;
+        .a5{
+            font-size: 20px;
+            color: #333;
+            padding: 31px 0 22px;
+          &:hover{
+            color:#00DADD;
+            filter: brightness(1.3);
+          }
+          img{
+            margin-bottom: 20px;
+          }
+        }
+        .b5{
+          font-size: 16px;
+          color: #999;
+          padding-bottom: 32px;
+        }
+        .c5{
+          font-size: 14px;
+          color: #999;
+        }
+      }
+    }
+  }
+}
