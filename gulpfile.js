@@ -34,9 +34,17 @@ gulp.task('js',function(){
   .pipe(gulp.dest('dist/js/'))
   .pipe(browserSync.stream());
 })
-gulp.task('img',function(){
+gulp.task('img',function () {
   gulp.src('images/**/*.*')
   .pipe(gulp.dest('dist/images/'))
+  .pipe(browserSync.stream());
+
+  gulp.src('images/java/*.*')
+  .pipe(gulp.dest('dist/images/java/'))
+  .pipe(browserSync.stream());
+
+  gulp.src('images/python/*.*')
+  .pipe(gulp.dest('dist/images/python/'))
   .pipe(browserSync.stream());
 })
 gulp.task('watch',function(){
