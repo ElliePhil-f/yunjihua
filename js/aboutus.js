@@ -1,12 +1,3 @@
-var i=0;
-var timer=setInterval(function(){
-  if(i==3){
-    i=0;
-    $('.bgcarousel ul').css({'margin-left':-i*100+'%'});
-  }
-  i++;
-  $('.bgcarousel ul').animate({'margin-left':-i*100+'%'},1000);
-},2000)
 function fun1(){
   var i=0;
   var timer=setInterval(function(){
