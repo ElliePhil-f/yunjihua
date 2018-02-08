@@ -1,0 +1,430 @@
+// 初始化样式
+body,ul,ol,li,h1,h2,h3,h4,h5,h6,div{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  background-color: transparent;
+  text-decoration: none;
+}
+ul,ol{
+  list-style:none;
+}
+img{
+  border:0;
+}
+a,
+input,
+button{
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input,
+textarea{
+  outline: none;
+}
+input,
+button{
+  -webkit-appearance:none;
+}
+// 导航条样式
+// banner区域
+.banner{
+  background: url(../images/java/banner_bg.jpg)no-repeat center top;
+  .inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    overflow: hidden;
+    padding-bottom: 70px;
+    h2{
+      color: #fff;
+      font-size: 54px;
+      text-align: center;
+      margin-bottom: 55px;
+      span{
+        display: block;
+        padding-top: 20px;
+        font-size: 26px;
+        color: #fff;
+      }
+    }
+    ul{
+      visibility: visible;
+      overflow: hidden;
+      li{
+        float: left;
+        margin: 0 38px;
+        .pics{
+          display: block;
+          width: 120px;
+          height: 120px;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          margin-bottom: 33px;
+        }
+        .pic1{
+          background: url(../images/java/listbg.png) no-repeat 30px 12px;
+          &:hover{
+            border: 0;
+            background: #da4e38 url(../images/java/listbg.png) no-repeat 32px 14px; 
+            animation: play 0.8s linear infinite alternate;
+          } 
+        }
+        .pic2{
+          background: url(../images/java/listbg.png) no-repeat -166px 12px; 
+          &:hover{
+            border: 0;
+            background: #da4e38 url(../images/java/listbg.png) no-repeat -164px 14px;
+            animation: play 0.8s linear infinite alternate; 
+          } 
+        }
+        .pic3{
+          background: url(../images/java/listbg.png) no-repeat -415px 12px; 
+          &:hover{
+            border: 0;
+            background: #da4e38 url(../images/java/listbg.png) no-repeat -413px 14px;
+            animation: play 0.8s linear infinite alternate; 
+          }
+        }
+        .pic4{
+          background: url(../images/java/listbg.png) no-repeat -652px 12px; 
+          &:hover{
+            border: 0;
+            background: #da4e38 url(../images/java/listbg.png) no-repeat -650px 14px;
+            animation: play 0.8s linear infinite alternate; 
+          }
+        }
+        .pic5{
+          background: url(../images/java/listbg.png) no-repeat -866px 12px; 
+          &:hover{
+            border: 0;
+            background: #da4e38 url(../images/java/listbg.png) no-repeat -864px 14px;
+            animation: play 0.8s linear infinite alternate; 
+          }
+        }
+        .pic6{
+          background: url(../images/java/listbg.png) no-repeat -1109px 12px;
+          &:hover{
+            border: 0;
+            background: #da4e38 url(../images/java/listbg.png) no-repeat -1107px 14px;
+            animation: play 0.8s linear infinite alternate; 
+          } 
+        }
+        .text{
+          display: block;
+          font-size: 22px;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+// about区域
+.about{
+  .inner{
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    .top{
+      text-align: center;
+      span{
+        color: #333;
+        font-size: 40px;
+      }
+    } 
+    .bottom{
+      padding: 20px 0;
+      ul{
+        li{
+          margin-bottom: 20px;
+          text-align: center;
+          width: 235px;
+          height: 180px;
+          border: 1px solid #ccc;
+          display: inline-block;
+          position: relative;
+          background: #fff;
+          padding-top: 25px;
+          margin-right: 5px;
+          backface-visibility: hidden;
+          transition: all 1.5s;
+          transform-style: preserve-3d;
+          &::after{
+            width: 235px;
+            height: 180px;
+            padding: 20px 20px;
+            background-color: #e5e5e5;
+            position: absolute;
+            content:"Java语言是一种面向对象的语言,它通过提供最基本的方法来完成指定的任务,只需理解一些基本的概念,就可以用它编写出适合于各种情况的应用程序。";
+            backface-visibility: hidden;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            line-height: 30px;
+            transform: rotateY(180deg);
+          }
+          &:hover{
+            transform: rotateY(180deg);
+          }
+          span{
+            display: block;
+            font-size: 18px;
+            color: #333;
+            line-height: 48px;
+          }
+        }
+        .li2{
+          &::after{
+            content: "Java语言的设计集中于对象及其接口,它提供了简单的类机制以及动态的接口模型。";
+          }
+        }        
+        .li3{
+          &::after{
+            content: "Java是面向网络的语言。通过它提供的类库可以处理TCP/IP协议,用户可以通过URL地址在网络上很方便地访问其它对象。";
+          }
+        }
+        .li4{
+          &::after{
+            content: "与平台无关的特性使Java程序可以方便地被移植到网络上的不同机器。";
+          }
+        }
+        .li5{
+          &::after{
+            content:"多线程机制使应用程序能够并行执行,而且同步机制保证了对共享数据的正确操作。";
+          }
+        }
+        .li6{
+          &::after{
+            content:"用于网络、分布环境下的Java必须要防止病毒的入侵。";
+          }
+        }
+        .li7{
+          &::after{
+            content:"Java在编译和运行程序时,都要对可能出现的问题进行检查,以消除错误的产生。";
+          }
+        }
+        .li8{
+          &::after{
+            content:"其它解释执行的语言如BASIC、TCL不同,Java字节码的设计使之能很容易地直接转换成对应于特定CPU的机器码,从而得到较高的性能。";
+          }
+        }
+        .li9{
+          &::after{
+            content:"Java的设计使它适合于一个不断发展的环境。";
+          }
+        }
+        .li10{
+          &::after{
+            content:"Java解释器直接对Java字节码进行解释执行。";
+          }
+        }
+      }
+    }  
+  }
+}
+// 课程区域
+.class{
+  .box{
+    background-color: rgba(0,0,0,1);
+    position: relative;
+    .title{
+      padding-top: 30px;
+      padding-bottom: 20px;
+      text-align: center;
+      span{
+        color: #fff;
+        font-size: 40px;
+      }
+    }
+    .container{
+      margin: 0 auto;
+      max-width: 1200px;
+      .left{
+        float: left;
+        width: 45%;
+        text-align: right;
+        .one{
+          margin-top: 4em;
+          h3{
+            color: #fff;
+            font-size: 50px;
+            margin: 0;
+            line-height: 1.1;
+          }
+          p{
+            color: #b7b7b7;
+            font-size: 14px;
+            margin: 1em 0;
+          }
+        }
+        .pic1{
+          position: absolute;
+          top: 10.5%;
+          left: 49.4%;
+        }
+        .two{
+          margin-top: 25em;
+          h3{
+            color: #fff;
+            font-size: 50px;
+            margin: 0;
+          }
+          p{
+            color: #b7b7b7;
+            font-size: 14px;
+            margin: 1em 0 0;
+          }
+          .sz{
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+        .pic2{
+          position: absolute;
+          top: 22.5%;
+          left: 49.4%;
+        }
+        .three{
+          margin-top: 25em;
+          h3{
+            color: #fff;
+            font-size: 50px;
+            margin: 0;
+          }
+          p{
+            color: #b7b7b7;
+            font-size: 14px;
+            margin: 1em 0 0;
+          }
+          .sz{
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+        .pic5{
+          position: absolute;
+          left:48.7%;
+          top: 69.5%;
+        }
+      }
+      .right{
+        float: right;
+        width: 50%;
+        border-left: 5px solid #fff;
+        padding-left: 5%;
+        text-align: left;
+        .r-one{
+          margin-top: 18em;
+          h3{
+            color: #fff;
+            font-size: 50px;
+            margin: 0;
+          }
+          p{
+            color: #b7b7b7;
+            font-size: 14px;
+            margin: 1em 0 0;
+          }
+          .sz{
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+        .pic3{
+          position: absolute;
+          top: 36%;
+          left: 48.7%;
+        }
+        .r-two{
+          margin-bottom: 27em;
+          margin-top: 26em;
+          h3{
+            color: #fff;
+            font-size: 50px;
+            margin: 0;
+          }
+          p{
+            color: #b7b7b7;
+            font-size: 14px;
+            margin: 1em 0 0;
+          }
+          .sz{
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+        .pic4{
+          position: absolute;
+          top: 56%;
+          left:49.4%;
+        }
+      }
+    }
+    .ban{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+// group区域
+.group{
+  height: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url(../images/java/group.jpg)bottom no-repeat;
+  .text{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2;
+    h3{
+      font-size: 40px;
+      color: #333;
+      padding: 50px 0 15px 0;
+    }
+    p{
+      color: #666;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+// footer区域
+.footer{
+  margin-top:50px; 
+  padding-bottom: 20px;
+  background:rgba(0,0,0,0.9);
+  color: rgba(255,255,255,0.9);
+  .content{
+    max-width: 1200px;
+    margin: 0 auto;
+   .left{
+    margin-top: 60px;
+    margin-left: 100px;
+    img{
+      vertical-align: 10px;
+    }
+   }
+   .right{
+    margin-right:150px; 
+    margin-top: 40px;
+   }
+  }
+}
+@keyframes play{
+  0%{
+    transform: scale(0.92);
+  }
+  100%{
+    transform: scale(1.02);
+  }
+}
+
