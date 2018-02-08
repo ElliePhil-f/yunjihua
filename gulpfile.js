@@ -46,6 +46,14 @@ gulp.task('img',function () {
   gulp.src('images/python/*.*')
   .pipe(gulp.dest('dist/images/python/'))
   .pipe(browserSync.stream());
+
+  gulp.src('images/sdutentsImg/*.*')
+  .pipe(gulp.dest('dist/images/sdutentsImg/'))
+  .pipe(browserSync.stream());
+
+  gulp.src('images/web/*.*')
+  .pipe(gulp.dest('dist/images/web/'))
+  .pipe(browserSync.stream());
 })
 gulp.task('watch',function(){
   gulp.watch(['index.html','page/**/*.html'],['html']);
