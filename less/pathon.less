@@ -1,0 +1,464 @@
+.w{
+  width: 1200px;
+  margin: 0 auto;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+i{
+  font-style: normal;
+}
+// 头部导航区域
+.header{
+  color:#fff;
+  font-size: 12px;
+  background-color:#2D2A3B;
+  height: 30px; 
+  line-height: 30px;
+}
+// 巨幕区域
+@media screen and(max-width: 1200px){
+  .banner{
+    width: 1200px;
+  }
+}
+.banner{
+  height: 700px;
+  background: url('../images/python/py-06.png') no-repeat;
+  background-size:100% 700px;
+  .mask{
+    height: 700px ;
+    background-color:rgba(45,42,59,.3);
+    font-size: 50px;
+    color: #fff;
+    .w{
+        padding:10px 150px 100px;
+        cursor: default;
+        .logo{
+          width: 150px;
+          height: 80px;
+          margin-left: -148px;
+          img{
+            width: 100%;
+          }
+        }
+      .py{
+        font-family: "楷体";
+        font-weight:bold; 
+        font-size: 90px;
+        margin-left: 250px;
+        margin-top: 100px;
+        .py-up{
+          margin-top: 100px;
+          display:block;
+        }
+        .py-down{
+          display:block;
+          margin-left: 120px;
+          margin-top: 6px;
+          em{
+            color:#f7d031;
+            letter-spacing:-5px;
+          }
+        }
+      }
+    }
+  }
+}
+// 导航区域
+.nav{
+  height: 60px;
+  background-color:#414048;
+  .w{
+    ul{
+      line-height: 60px;
+      li{
+        margin:0 40px;
+        float: left;
+        font-size: 20px;
+        a{
+          color: #fff;
+          &:hover{
+            text-decoration: none;
+            color:red;            
+          }
+        }
+      }
+    }
+  }
+}
+// python区域
+.introduce{
+  padding: 50px 0;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color:rgba(65,64,72,.1);
+  .header-top{
+    font-size: 60px;
+    color:#666;
+    h1{
+      text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      -webkit-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      -moz-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      *filter: Glow(color=red,strength=1);
+      letter-spacing: 7px;
+      font-size: 50px;
+      i{
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .header-down{
+    margin-top: 40px;
+    overflow: hidden;
+    .imag{
+      width: 600px;
+      display: inline-block;
+      padding: 4px;
+      border: 1px solid #ccc;
+      img{
+        width: 100%;
+        vertical-align:-70px;
+      }
+    }
+    .word{
+      font-size: 18px;
+      padding:10px 30px;   
+      text-align: left;
+      display: inline-block;
+      width: 600px;
+      color: #666;
+      dd{
+        margin-top: 10px;
+      }  
+    }
+  }
+}
+// 为什么学python
+.study{
+  padding: 50px 0;
+  padding-bottom: 70px;
+  text-align: center;
+  .header-top{
+    font-size: 60px;
+    color:#666;
+    h1{
+      text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      -webkit-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      -moz-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      *filter: Glow(color=red, strength=1);
+      letter-spacing: 7px;
+      font-size: 50px;
+      i{
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .header-down{
+    font-size: 18px;
+    margin-top: 40px;
+    .words{
+      width: 600px;
+      padding-left: 40px;
+      text-align: left;
+      display: inline-block;
+      li{
+        list-style:circle;
+        margin-top: 10px; 
+      }
+    }
+    .pic{
+      display: inline-block;
+      width: 600px;
+      img{
+        width: 100%;
+        vertical-align:-86px;
+      }
+    }
+  }
+}
+// python的行业趋势
+.develop{
+  padding: 50px 0;
+  padding-bottom: 70px;
+  text-align: center;
+  .header-top{
+    font-size: 60px;
+    color:#666;
+    h1{
+      text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      -webkit-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      -moz-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      *filter: Glow(color=red, strength=1);
+      letter-spacing: 7px;
+      font-size: 50px;
+      i{
+        letter-spacing: 1px;
+      }
+    }
+  }
+  p{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .header-down{
+    margin-top: 40px;
+    .pic-01{ 
+      width: 400px;    
+      display: inline-block; 
+      padding: 50px;
+      img{
+        width: 100%;
+      }    
+    }
+    .pic{
+      width: 400px;
+      display: inline-block;
+      padding: 50px;
+      img{
+        width: 100%;
+      }
+    }
+    .pic-02{
+      width: 400px;
+      display: inline-block;
+      padding: 50px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+// python课程体系
+.course{
+  padding: 50px 0;
+  padding-bottom: 70px;
+  text-align: center;
+  .header-top{
+    font-size: 60px;
+    color:#666;
+    h1{
+      text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      -webkit-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      -moz-text-shadow:red 1px 0 0,red 0 1px 0,red -1px 0 0,red 0 -1px 0;
+      *filter: Glow(color=red, strength=1);
+      letter-spacing: 7px;
+      font-size: 50px;
+      i{
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .header-down{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 18px;
+    // 四个阶段公共样式
+    .words{     
+      width: 1000px;
+      height: 400px;
+      margin: 0 auto;
+      padding-top: 40px;
+      position: relative;
+      // 六角形
+      .icco{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 100px auto;
+        position: absolute;
+        top: 0;
+        left:468px;
+        span{
+          position: absolute;
+          top: 35px;
+          left: 15px;
+          color: #fff;
+        }
+        i{
+          display: inline-block;
+          border-top:30px solid #65d3e8;
+          border-right: 30px solid transparent;
+        }
+        .da-01{
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: rotateZ(90deg);
+          border-top-color:#d8dada; 
+        }
+        .da-02{
+          border-top-color:#65d3e8; 
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: rotateZ(270deg);
+        }
+        .da-03{
+          border-top-color:#d8dada; 
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          transform: rotateZ(180deg);
+        }
+      }
+      // 左边目录
+      .word-left{
+        width: 498px;
+        display: inline-block;
+        padding-left: 50px;
+        dl{
+          background-color:#65d3e8;
+          padding: 20px;
+          border-radius: 20px; 
+          dd{
+            margin: 15px 0;
+          }         
+        }
+      }  
+      // 右边目录
+      .word-right{
+        width: 400px;
+        display: inline-block;
+        margin-left: 40px;
+        span{
+          display: inline-block;
+          background-color:#d8dada;
+          padding:15px 150px 15px 15px; 
+          border-radius: 20px;
+        }
+      } 
+    }
+    // 第一阶段样式
+    .word-01{
+      border-left:2px solid #44c9e3; 
+      border-bottom:2px solid #44c9e3;
+      .icco{
+        background-color: #59f568;
+      }
+      .word-left{
+        vertical-align:14px;
+      }
+    }
+    // 第二阶段样式
+    .word-02{
+      border-right:2px solid #44c9e3; 
+      border-bottom:2px solid #44c9e3; 
+      .icco{
+        background-color:#f8a412;
+        i{
+          border-top:30px solid #d8dada;
+        }
+        .da-01{
+          border-top-color:#65d3e8; 
+        }
+        .da-02{
+          border-top-color:#d8dada; 
+        }
+        .da-03{
+          border-top-color:#65d3e8; 
+        }
+      } 
+      .word-left{
+        vertical-align:9px;
+        dl{
+           background-color:#d8dada;
+        }
+      }
+      .word-right{
+        span{
+          background-color:#65d3e8;
+          padding:15px 140px 15px 15px;
+          li{
+            margin:11px 0;
+          }
+        }
+      }
+    }
+    // 第三阶段样式
+    .word-03{
+      border-left:2px solid #44c9e3; 
+      border-bottom:2px solid #44c9e3;
+      .icco{
+        background-color:#9716e9; 
+      }
+      .word-left{
+        vertical-align:9px;
+        dl{
+           background-color:#65d3e8;
+        }
+      }
+      .word-right{
+        span{
+          background-color:#d8dada;
+          padding:15px 140px 15px 15px;
+          li{
+            margin:3px 0;
+          }
+        }
+      }
+    }
+    // 第四阶段样式
+    .word-04{
+      border-right:2px solid #44c9e3; 
+      border-bottom:2px solid #44c9e3;
+      padding-top: 30px;
+      .icco{
+        background-color: red;
+        i{
+          border-top:30px solid #d8dada;
+        }
+        .da-01{
+          border-top-color:#65d3e8; 
+        }
+        .da-02{
+          border-top-color:#d8dada; 
+        }
+        .da-03{
+          border-top-color:#65d3e8; 
+        }
+      } 
+      .word-left{
+        vertical-align:9px;
+        dl{
+           background-color:#d8dada;
+        }
+      }
+      .word-right{
+        span{
+          background-color:#65d3e8;
+          padding:15px 140px 15px 15px;
+          li{
+            margin:7px 0;
+          }
+        }
+      }
+    }
+  }
+}
+// 页脚
+.footer{
+  padding: 50px 0;
+  background-color: #ddd;
+  margin-top:100px; 
+  padding-bottom: 20px;
+  background:rgba(0,0,0,0.9);
+  color: rgba(255,255,255,0.9);
+  .w{
+    .left{
+      margin-top: 60px;
+      margin-left: 100px;
+      img{
+        vertical-align: 10px;
+      }
+    }
+    .right{
+      margin-right:150px; 
+      margin-top: 40px;
+    }
+  }
+}
+}
